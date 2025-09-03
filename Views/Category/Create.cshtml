@@ -1,0 +1,12 @@
+﻿@model Category
+<h1 class=" text-center mb-3"> Category creation</h1>
+<form asp-action="Create" method="post" class="w-50 m-auto p-3">
+	<div class="form-group w-50 m-auto">
+		<label for="Name" class="form-label">Name</label>
+		<input asp-for="Name" name="Name" class="form-control" type="text" placeholder="Enter name">
+	</div>
+	<div class="w-50 m-auto d-flex">
+		<input class ="btn btn-success flex-grow-1 mx-1 my-3" type="submit" value="Create" />
+		<a asp-action="Index" class="btn btn-dark flex-grow-1 mx-1 my-3">Return</a>
+	</div>
+</form>

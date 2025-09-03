@@ -1,0 +1,30 @@
+﻿@model Product
+<h1 class=" text-center mb-3"> Product creation</h1>
+<form asp-action="Create" method="post" class="w-50 m-auto p-3">
+	<div class="form-group w-50 m-auto">
+		<label for="Name" class="form-label">Name</label>
+		<input asp-for="Name" name="Name" class="form-control" type="text" placeholder="Enter name">
+
+		<label for="Price" class="form-label">Price</label>
+		<input asp-for="Price" name="Price" class="form-control" type="number" placeholder="Enter price">
+
+		<label for="Description" class="form-label">Description</label>
+		<input asp-for="Description" name="Description" class="form-control" type="text" placeholder="Enter description">
+
+		<label for="Image" class="form-label">Image</label>
+		<input asp-for="Image" name="Image" class="form-control" type="text" placeholder="Enter image">
+
+		<label for="Amount" class="form-label">Amount</label>
+		<input asp-for="Amount" name="Amount" class="form-control" type="number" placeholder="Enter amount">
+
+		<label for="CategoryId" class="form-label">Category Id</label>
+		<input asp-for="CategoryId" name="CategoryId" class="form-control" type="number" placeholder="Enter category id">
+
+	</div>
+
+	<div class="w-50 m-auto d-flex">
+		<input class="btn btn-success flex-grow-1 mx-1 my-3" type="submit" value="Create" />
+		<a asp-action="Index" class="btn btn-dark flex-grow-1 mx-1 my-3">Return</a>
+	</div>
+</form>
+
